@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { FaCopyright } from "react-icons/fa";
 const MobileFilter = ({
   mobileFiltersOpen,
   setMobileFiltersOpen,
@@ -84,6 +85,7 @@ const MobileFilter = ({
                             </span>
                           </Disclosure.Button>
                         </h3>
+
                         <Disclosure.Panel className="pt-6">
                           <div className="space-y-6">
                             {section.options.map((option, index, optionIdx) => (
@@ -115,13 +117,21 @@ const MobileFilter = ({
                             ))}
                           </div>
                         </Disclosure.Panel>
+                        <div className="m-auto justify-center items-center space-x-1  flex mt-5">
+                          <span className="text-gray-800">
+                            <FaCopyright />
+                          </span>
+                          <span className="text-gray-800 font-semibold tracking-wider">
+                            Prajwal.dev
+                          </span>
+                        </div>
                       </>
                     )}
                   </Disclosure>
                 ))}
               </form>
             </Dialog.Panel>
-          </Transition.Child>
+          </Transition.Child>{" "}
         </div>
       </Dialog>
     </Transition.Root>

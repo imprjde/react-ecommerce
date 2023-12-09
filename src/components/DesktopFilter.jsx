@@ -1,6 +1,7 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
+import { FaCopyright } from "react-icons/fa";
 const DesktopFilter = ({
   filters,
   setCategoryFilter,
@@ -63,6 +64,14 @@ const DesktopFilter = ({
           )}
         </Disclosure>
       ))}
+      <div className="m-auto justify-center items-center space-x-1  flex mt-3">
+        <span className="text-gray-800">
+          <FaCopyright />
+        </span>
+        <span className="text-gray-800 font-semibold tracking-wider">
+          Prajwal.dev
+        </span>
+      </div>
     </form>
   );
 };
