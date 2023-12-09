@@ -10,7 +10,7 @@ const OrderPlaced = () => {
     <div className="m-auto  h-screen flex flex-col items-center justify-center">
       <img
         className="w-[600px] md:w-[450px]"
-        src="image/orderConfirm.jpg"
+        src="https://img.freepik.com/free-vector/order-confirmed-concept-illustration_114360-6599.jpg?size=626&ext=jpg&ga=GA1.1.63100998.1692108872&semt=ais"
         alt="orderConfirm"
       />
       <span
