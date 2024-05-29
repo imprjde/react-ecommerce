@@ -67,7 +67,7 @@ export default function ProductDetail({
                 >
                   <img
                     src={image}
-                    alt={product.images[3].alt}
+                    alt={product?.title.slice(0, 10)}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
@@ -83,7 +83,7 @@ export default function ProductDetail({
                   >
                     <img
                       src={image}
-                      alt={product.images[3].alt}
+                      alt={product?.title.slice(0, 10)}
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
